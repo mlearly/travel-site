@@ -7,7 +7,7 @@ class RevealOnScroll {
     this.thresholdPercent = thresholdPercent;
     this.browserHeight = window.innerHeight;
     this.hideInitially();
-    this.scrollThrottle = throttle(this.calcCaller, 300).bind(this);
+    this.scrollThrottle = throttle(this.calcCaller, 200).bind(this);
     this.events();
   }
 

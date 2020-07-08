@@ -6,11 +6,17 @@
   transition: background-color .3s ease-out;
 
   &--is-expanded {
-    background-color: rgba($primaryBlue, 0.75);
+    background-color: rgba(23, 51, 72, 0.8);
   }
 
   @mixin atMedium {
+    position: fixed;
     background-color: rgba($primaryBlue, 0.3);
+    border-bottom: 1px solid rgba(23, 51, 72, 0.15);
+
+    &--dark {
+      background-color: rgba(23, 51, 72, 1);
+    }
   }
 
   &__button-container {
@@ -25,13 +31,24 @@
     padding: 13px 29px;
     top: 0;
     left: 50%;
+    transform-origin: 50% 0;
     transform: translateX(-50%);
+    transition: transform .3s ease-in-out;
 
     @mixin atMedium {
       left: auto;
       transform: translateX(0);
       padding: 25px 36px;
+
+      .site-header--dark & {
+        transform: scale(.55);
+      }
     }
+  }
+
+  &--dark {
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.5);
+    border-bottom: none;
   }
 
   &__menu-icon {

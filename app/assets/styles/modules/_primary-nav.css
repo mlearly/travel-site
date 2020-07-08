@@ -45,13 +45,18 @@
     margin-top: 10px;
     padding: 5px 8px;
     font-size: 0.8rem;
-    background-color: rgba($primaryBlue, .5);
+    background-color: rgba($primaryBlue, 1);
 
     @mixin atMedium {
       font-size: 1rem;
       padding: 12px 0;
       background-color: transparent;
       margin-top: 0;
+
+      &.is-current-link {
+        color: #fabb69;
+        transition: color .1s ease-out;
+      }
     }
   }
 }
