@@ -1,0 +1,20 @@
+.client-area {
+  padding: 30px;
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    flex: 1;
+    border: 1px solid #ddd;
+    outline: none;
+    padding: 5px 0 5px 10px;
+    background: #e9e9e9;
+    font-weight: 300;
+  }
+
+  &__error {
+    color: #f00;
+  }
+}
