@@ -1,7 +1,7 @@
 exports.handler = function(event, context, callback) {
   const hiddenContent = `
   <h3>Welcome to the hidden area</h3>
-  <p>Here you will find all your <em>privalaged content</em>.</p>`
+  <p>Here you will find all your <em>privileged content</em>.</p>`
 
   let body
 
